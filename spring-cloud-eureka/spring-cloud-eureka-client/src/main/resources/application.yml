@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-cloud-eureka-client
+
+server:
+  port: 0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
+quandl:
+  apiUrl: https://www.quandl.com/api/v3/datasets/WIKI/{0}/data.json
